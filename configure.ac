@@ -46,6 +46,9 @@ AC_C_INLINE
 AC_TYPE_SIZE_T
 AC_CHECK_SIZEOF(off_t)
 
+CFLAGS="-g3 -O0"
+CPPFLAGS="-g3 -O0"
+CXXFLAGS="-g3 -O0"
 CPPFLAGS="${CPPFLAGS} -D_GNU_SOURCE"
 
 AC_CHECK_MEMBERS([struct dl_phdr_info.dlpi_subs],,,[#include <link.h>])
